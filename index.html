@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hartmut Sailing</title>
+  <meta name="description" content="75 years old. A broken heart. A tiny sailboat. Sailing solo. And the Atlantic ahead.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="overlay"></div>
+
+    <nav class="nav">
+      <a class="brand" href="#top">HARTMUT <span>SAILING</span></a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="menu">
+        <a href="#man">The Man</a>
+        <a href="#boat">Auntjesse</a>
+        <a href="#journey">The Journey</a>
+        <a href="#logbook">Logbook</a>
+        <a href="#follow">Follow</a>
+        <a href="#support">Support</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">HARTMUT SAILING</p>
+      <h1>75 years old. A broken heart. A tiny sailboat. Sailing solo. And the Atlantic ahead.</h1>
+      <p class="lead"><em>Auntjesse</em> is home. The boat. The nest. His kingdom.</p>
+      <div class="cta-row">
+        <a class="button primary" href="https://www.youtube.com/@HartmutSailing" target="_blank" rel="noopener">Watch the story</a>
+        <a class="button secondary" href="#journey">Discover the journey</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="man" class="section">
+      <div class="section-inner narrow">
+        <p class="kicker">The Man</p>
+        <h2>Hartmut</h2>
+        <p>At 75, Hartmut is choosing the sea, solitude and uncertainty over standing still. This is not a polished adventure. It is a real one, unfolding day by day.</p>
+      </div>
+    </section>
+
+    <section id="boat" class="section alt">
+      <div class="section-inner narrow">
+        <p class="kicker">The Boat</p>
+        <h2>Auntjesse</h2>
+        <p>More than a sailboat, <em>Auntjesse</em> is home, shelter, nest and Hartmut's little kingdom on the water.</p>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="section-inner">
+        <p class="kicker">The Journey</p>
+        <h2>From Britain toward the Atlantic south</h2>
+        <p>The first leg points toward the Celtic Sea, the Bay of Biscay and Galicia. The destination matters, but the journey itself is the story.</p>
+        <img class="route-image" src="assets/hero.jpg" alt="Hartmut Sailing route across the Atlantic coast of Western Europe">
+      </div>
+    </section>
+
+    <section id="logbook" class="section alt">
+      <div class="section-inner narrow">
+        <p class="kicker">Logbook</p>
+        <h2>Stories from the sea</h2>
+        <p>Photos, short notes, unexpected encounters, hard days and small victories will be added here as the voyage develops.</p>
+      </div>
+    </section>
+
+    <section id="follow" class="section">
+      <div class="section-inner narrow">
+        <p class="kicker">Follow</p>
+        <h2>Follow Hartmut Sailing</h2>
+        <p>The YouTube channel is already live.</p>
+        <a class="button primary" href="https://www.youtube.com/@HartmutSailing" target="_blank" rel="noopener">YouTube @HartmutSailing</a>
+      </div>
+    </section>
+
+    <section id="support" class="section support">
+      <div class="section-inner narrow">
+        <p class="kicker">Support the Journey</p>
+        <h2>Help keep Hartmut sailing</h2>
+        <p>If you enjoy following the journey and want to help with life aboard, harbour fees, fuel and maintenance, you can support it voluntarily through PayPal.</p>
+        <a class="button primary" href="https://www.paypal.me/Hartmutsailing" target="_blank" rel="noopener">Support on PayPal</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hartmut Sailing</p>
+    <p><a href="https://www.youtube.com/@HartmutSailing" target="_blank" rel="noopener">@HartmutSailing</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => menu.classList.toggle('open'));
+    document.querySelectorAll('.menu a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+  </script>
+</body>
+</html>
